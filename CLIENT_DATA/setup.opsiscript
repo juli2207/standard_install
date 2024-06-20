@@ -1,0 +1,27 @@
+; Copyright (c) uib gmbh (www.uib.de)
+; This sourcecode is owned by uib gmbh
+; and published under the Terms of the General Public License.
+; credits: http://www.opsi.org/en/credits/
+
+[Actions]
+requiredWinstVersion >= "4.11.3.2"
+setLogLevel=6
+
+DefVar $ProductId$
+DefVar $LogDir$
+
+; use following logfile name: "$LogDir$\$ProductId$.install_log.txt"
+Set $LogDir$ = "%SystemDrive%\tmp"
+
+; ----------------------------------------------------------------
+; - Please edit the following values                             -
+; ----------------------------------------------------------------
+;$ProductId$ should be the name of the product in opsi
+; therefore please: only lower letters, no umlauts, 
+; no white space use '-' as a seperator
+Set $ProductId$       = "standard_install"
+; ----------------------------------------------------------------
+
+ShowBitmap "%ScriptPath%\" + $ProductId$ + ".png" $ProductId$
+
+set $ExitCode$ = 0
