@@ -1,5 +1,5 @@
 [Package]
-version: 1.corr4corr
+version: 1.corr1corr
 depends: 
 
 [Product]
@@ -12,7 +12,7 @@ version: 1.0
 priority: 0
 licenseRequired: False
 productClasses: 
-setupScript: setup.opsiscript
+setupScript: 
 uninstallScript: 
 updateScript: 
 alwaysScript: 
@@ -22,19 +22,13 @@ userLoginScript:
 
 [ProductDependency]
 action: setup
-requiredProduct: swaudit
-requiredStatus: installed
-requirementType: before
-
-[ProductDependency]
-action: setup
-requiredProduct: o4i_7zip
-requiredStatus: installed
-requirementType: before
-
-[ProductDependency]
-action: setup
 requiredProduct: windomain
+requiredStatus: installed
+requirementType: before
+
+[ProductDependency]
+action: setup
+requiredProduct: o4i_zoom-client
 requiredStatus: installed
 requirementType: before
 
@@ -58,7 +52,25 @@ requirementType: before
 
 [ProductDependency]
 action: setup
+requiredProduct: o4i_firefox-esr
+requiredStatus: installed
+requirementType: before
+
+[ProductDependency]
+action: setup
 requiredProduct: o4i_element-messenger
+requiredStatus: installed
+requirementType: before
+
+[ProductDependency]
+action: setup
+requiredProduct: o4i_dell-command-update
+requiredStatus: installed
+requirementType: before
+
+[ProductDependency]
+action: setup
+requiredProduct: o4i_chrome
 requiredStatus: installed
 requirementType: before
 

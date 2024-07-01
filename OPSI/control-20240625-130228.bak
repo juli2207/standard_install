@@ -1,5 +1,5 @@
 [Package]
-version: 1.corr4corr
+version: 1.corr3corr
 depends: 
 
 [Product]
@@ -59,6 +59,12 @@ requirementType: before
 [ProductDependency]
 action: setup
 requiredProduct: o4i_element-messenger
+requiredStatus: installed
+requirementType: before
+
+[ProductDependency]
+action: setup
+requiredProduct: o4i_chrome
 requiredStatus: installed
 requirementType: before
 
